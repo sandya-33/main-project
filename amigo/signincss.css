@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body {
+    background: linear-gradient(135deg, #8b4991, #459171,rgb(77, 77, 126),rgb(121, 121, 57));
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .login-form {
+    width: 500px;
+    background: white;
+    margin: 5.3% auto;
+    padding: 50px 0;
+    color:black;
+    box-shadow: 0 0 20px 2px rgb(0,0,0,0.5);
+  }
+   h1 {
+    padding: 20px 20px 0 15px;
+    margin-left: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+ .login-form .content {
+    padding: 20px;
+    text-align: center;
+  }
+  .login-form .link{
+    margin-left: 26%;
+    padding-bottom: 10px;
+    
+  }
+ /* .login-form .input-field {
+    padding: 12px 5px;
+  }*/
+ /* .login-form .input-field input  {
+    font-size: 16px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid #747474;
+    outline: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }*/
+  .login-form .input-field {
+    padding: 12px 15px;
+  }
+.login-form .input-field input{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 80%;
+    border: 0;
+    padding: 10px 5px;
+    outline: none;
+    border-bottom: 1px solid rgb(15, 14, 14);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+  .input-field .eye{
+      position: absolute;
+  }
+ #hide1{
+     display: none;
+ }
+  .login-form a.link {
+    text-decoration: none;
+    color: #747474;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .login-form .action {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+  .login-form .action button {
+        padding: 15px;
+        margin-left: 20px;
+        margin-top: 10PX;
+        margin-right: 20px;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .login-form .input-field .policies{
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 0px;
+    height: 0px;
+    background: #f5f5ff;
+    border-radius: 5px;
+    border-radius:5px;
+    margin-top: 10px;
+   box-sizing: border-box;
+    opacity: 1;
+     overflow: hidden;
+   transition: height 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+  .login-form .form .input-field .policies .active{
+      opacity: 1;
+      padding: 10px;
+      height: 180px;
+  }
+  .login-form  .input-field .policies > div{
+    margin: 15px 10px;
+    font-weight: 600;
+    color: #888;
+}
+.login-form .input-field .policies .active{
+    color: #111;
+}
+
+  .login-form .action button:hover {
+    background: linear-gradient(135deg,#9b59b6 ,#71b7e6);
+    color: black;
+  }
+  .login-form .action button:nth-child(2) {
+    background: #2d3b55;
+    color: #fff;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+  }
+  .login-form .action button:nth-child(2):hover {
+    background: #3c4d6d;
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Signin</title>
+  <script type="text/javascript" src="password.js" ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+ <link rel="stylesheet" href="signincss.css">
+
+</head>
+<body>
+<div class="login-form">
+  <form>
+    <h1>Login</h1>
+    
+      <div class="input-field">
+        <input type="email" placeholder="Email/Username" autocomplete="nope"></div>
+      
+      <div class="input-field">
+        <input type="password" placeholder="Password" autocomplete="new-password" id="myinput">
+     <span class="eye" onclick="myFunction()">
+           <i id="hide1" class="far fa-eye"></i>
+        <i id="hide2" class="far fa-eye-slash"></i></span> 
+      
+      <div class="policies">
+          <div class="policy-length">
+              8 Characters
+          </div>
+          <div class="policy-number">
+            Contains Number
+        </div>
+        <div class="policy-uppercase">
+            Contains Uppercase
+        </div>
+        <div class="policy-special">
+            Contains Special Characters
+        </div>
+      </div>
+    </div>
+      <a href="#" class="link">Forgot Your Password?</a>
+      
+    <div class="action">
+      <button>Sign in</button>
+    </div>
+    <p class="content" >Dont have an account?
+    <a href="signup.html">register here</a></p>    
+  </form>
+  
+</div>
+  <script >
+      function myFunction(){
+          var x=document.getElementById("myinput");
+          var y=document.getElementById("hide1");
+          var z=document.getElementById("hide2");
+
+          if(x.type=='password')
+          {
+              x.type="text";
+              y.style.display= "block";
+              z.style.display="none";
+          }
+          else{
+              x.type="password";
+              y.style.display="none";
+              z.style.display="block";
+          }
+      }
+
+  </script>
+
+</body>
+</html>
